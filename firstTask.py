@@ -38,3 +38,5 @@ for user_name in soup.find('tbody').find_all('a'):
 
 df = pandas.DataFrame({'Name':name, 'Github link':link, 'Number of followers':followers})
 df.to_csv('GithubTopData.csv', index = False, encoding = 'utf-8')
+
+
